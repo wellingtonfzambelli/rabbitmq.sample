@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "RabbitMQ.Samples/1.0.0": {
+        "runtime": {
+          "RabbitMQ.Samples.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RabbitMQ.Samples/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

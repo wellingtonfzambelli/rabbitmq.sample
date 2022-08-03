@@ -1,0 +1,15 @@
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\bin\Debug\net6.0\RabbitMQ.Samples.exe
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\bin\Debug\net6.0\RabbitMQ.Samples.deps.json
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\bin\Debug\net6.0\RabbitMQ.Samples.runtimeconfig.json
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\bin\Debug\net6.0\RabbitMQ.Samples.dll
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\bin\Debug\net6.0\RabbitMQ.Samples.pdb
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\obj\Debug\net6.0\RabbitMQ.Samples.csproj.AssemblyReference.cache
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\obj\Debug\net6.0\RabbitMQ.Samples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\obj\Debug\net6.0\RabbitMQ.Samples.AssemblyInfoInputs.cache
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\obj\Debug\net6.0\RabbitMQ.Samples.AssemblyInfo.cs
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\obj\Debug\net6.0\RabbitMQ.Samples.csproj.CoreCompileInputs.cache
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\obj\Debug\net6.0\RabbitMQ.Samples.dll
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\obj\Debug\net6.0\refint\RabbitMQ.Samples.dll
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\obj\Debug\net6.0\RabbitMQ.Samples.pdb
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\obj\Debug\net6.0\RabbitMQ.Samples.genruntimeconfig.cache
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Samples\obj\Debug\net6.0\ref\RabbitMQ.Samples.dll
