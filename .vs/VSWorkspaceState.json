@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\RabbitMQ.Samples"
   ],
-  "SelectedNode": "\\C:\\Projetos\\Sample.RabbitMQ\\rabbitmq.sample",
+  "SelectedNode": "\\RabbitMQ.Samples.sln",
   "PreviewInSolutionExplorer": false
 }
