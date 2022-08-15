@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = RabbitMQ.Sample.Producer.Consumer
+build_property.ProjectDir = C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\

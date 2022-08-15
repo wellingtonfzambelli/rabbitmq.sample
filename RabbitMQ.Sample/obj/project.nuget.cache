@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "v3wE3qjsxCgBp9VXKt0KmlhjMeK74xWz7wRZOdNKxKWssmpJyosAWWFMtJs5cfn+yTbpRm4zbuOFL0pYi4oKzw==",
+  "dgSpecHash": "qY6ufSgFrTcyR5037a7/E0OnrXirTLgyZLkjzp+8oN481yW5EQJVStKtilDqP0H8Gz88meFcab9mDC1YjQYmDg==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\Sample.RabbitMQ\\rabbitmq.sample\\RabbitMQ.Sample\\RabbitMQ.Sample.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Projetos\\Sample.RabbitMQ\\rabbitmq.sample\\RabbitMQ.Sample\\RabbitMQ.Sample.Producer.Consumer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Wellington\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\Wellington\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Wellington\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }

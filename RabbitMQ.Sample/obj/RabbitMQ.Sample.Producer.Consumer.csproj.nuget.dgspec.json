@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\Sample.RabbitMQ\\rabbitmq.sample\\RabbitMQ.Sample\\RabbitMQ.Sample.csproj": {}
+    "C:\\Projetos\\Sample.RabbitMQ\\rabbitmq.sample\\RabbitMQ.Sample\\RabbitMQ.Sample.Producer.Consumer.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\Sample.RabbitMQ\\rabbitmq.sample\\RabbitMQ.Sample\\RabbitMQ.Sample.csproj": {
+    "C:\\Projetos\\Sample.RabbitMQ\\rabbitmq.sample\\RabbitMQ.Sample\\RabbitMQ.Sample.Producer.Consumer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Sample.RabbitMQ\\rabbitmq.sample\\RabbitMQ.Sample\\RabbitMQ.Sample.csproj",
-        "projectName": "RabbitMQ.Sample",
-        "projectPath": "C:\\Projetos\\Sample.RabbitMQ\\rabbitmq.sample\\RabbitMQ.Sample\\RabbitMQ.Sample.csproj",
+        "projectUniqueName": "C:\\Projetos\\Sample.RabbitMQ\\rabbitmq.sample\\RabbitMQ.Sample\\RabbitMQ.Sample.Producer.Consumer.csproj",
+        "projectName": "RabbitMQ.Sample.Producer.Consumer",
+        "projectPath": "C:\\Projetos\\Sample.RabbitMQ\\rabbitmq.sample\\RabbitMQ.Sample\\RabbitMQ.Sample.Producer.Consumer.csproj",
         "packagesPath": "C:\\Users\\Wellington\\.nuget\\packages\\",
         "outputPath": "C:\\Projetos\\Sample.RabbitMQ\\rabbitmq.sample\\RabbitMQ.Sample\\obj\\",
         "projectStyle": "PackageReference",

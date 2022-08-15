@@ -1,0 +1,17 @@
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\bin\Debug\netcoreapp3.1\RabbitMQ.Sample.exe
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\bin\Debug\netcoreapp3.1\RabbitMQ.Sample.deps.json
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\bin\Debug\netcoreapp3.1\RabbitMQ.Sample.runtimeconfig.json
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\bin\Debug\netcoreapp3.1\RabbitMQ.Sample.runtimeconfig.dev.json
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\bin\Debug\netcoreapp3.1\RabbitMQ.Sample.dll
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\bin\Debug\netcoreapp3.1\RabbitMQ.Sample.pdb
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\obj\Debug\netcoreapp3.1\RabbitMQ.Sample.csproj.AssemblyReference.cache
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\obj\Debug\netcoreapp3.1\RabbitMQ.Sample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\obj\Debug\netcoreapp3.1\RabbitMQ.Sample.AssemblyInfoInputs.cache
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\obj\Debug\netcoreapp3.1\RabbitMQ.Sample.AssemblyInfo.cs
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\obj\Debug\netcoreapp3.1\RabbitMQ.Sample.csproj.CoreCompileInputs.cache
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\obj\Debug\netcoreapp3.1\RabbitMQ.Sample.csproj.CopyComplete
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\obj\Debug\netcoreapp3.1\RabbitMQ.Sample.dll
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\obj\Debug\netcoreapp3.1\RabbitMQ.Sample.pdb
+C:\Projetos\Sample.RabbitMQ\rabbitmq.sample\RabbitMQ.Sample\obj\Debug\netcoreapp3.1\RabbitMQ.Sample.genruntimeconfig.cache
