@@ -20,7 +20,7 @@ namespace RabbitMQ.Sample.Producer.Consumer
 
         static void Producer()
         {
-            var factory = new ConnectionFactory() { HostName = HOST_NAME};
+            var factory = new ConnectionFactory() { HostName = HOST_NAME };
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {

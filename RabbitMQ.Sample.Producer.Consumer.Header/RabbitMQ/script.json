@@ -1,0 +1,71 @@
+{
+  "rabbit_version": "3.10.7",
+  "parameters": [],
+  "policies": [],
+  "queues": [
+    {
+      "name": "q.sales.two",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": { "x-queue-type": "classic" }
+    },
+    {
+      "name": "q.financial.one",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": { "x-queue-type": "classic" }
+    },
+    {
+      "name": "q.financial.two",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": { "x-queue-type": "classic" }
+    },
+    {
+      "name": "q.sales.one",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": { "x-queue-type": "classic" }
+    }
+  ],
+  "exchanges": [
+    {
+      "name": "x.departament",
+      "type": "headers",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    }
+  ],
+  "bindings": [
+    {
+      "source": "x.departament",
+      "destination": "q.financial.one",
+      "destination_type": "queue",
+      "routing_key": "",
+      "arguments": { "departament": "financial" }
+    },
+    {
+      "source": "x.departament",
+      "destination": "q.financial.two",
+      "destination_type": "queue",
+      "routing_key": "",
+      "arguments": { "departament": "financial" }
+    },
+    {
+      "source": "x.departament",
+      "destination": "q.sales.one",
+      "destination_type": "queue",
+      "routing_key": "",
+      "arguments": { "departament": "sales" }
+    },
+    {
+      "source": "x.departament",
+      "destination": "q.sales.two",
+      "destination_type": "queue",
+      "routing_key": "",
+      "arguments": { "departament": "sales" }
+    }
+  ]
+}
