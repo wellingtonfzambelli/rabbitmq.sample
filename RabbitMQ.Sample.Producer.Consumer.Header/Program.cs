@@ -9,14 +9,14 @@ namespace RabbitMQ.Sample.Producer.Consumer.Header
 {
     internal class Program
     {
+        private const string VHOST = "vh.samples";
         private const string HOST_NAME = "localhost";
         private const string EXCHANGE = "x.departament";
-        private const string VHOST = "vh.samples";
 
         static void Main(string[] args)
         {
-            Producer("Hello FINANCIAL departament, test message!", DepartamentType.financial);
-            Producer("Hello SALES departament, test message!", DepartamentType.sales);
+            Producer("Hello FINANCIAL departament!", DepartamentType.financial);
+            Producer("Hello SALES departament!", DepartamentType.sales);
 
             Consumer("q.financial.one");
             Consumer("q.financial.two");
@@ -44,8 +44,6 @@ namespace RabbitMQ.Sample.Producer.Consumer.Header
                 var properties = channel.CreateBasicProperties();
                 properties.Headers = new Dictionary<string, object> { { "departament", departamentType.ToString() } };
                 channel.BasicPublish(EXCHANGE, string.Empty, properties, body);
-
-                Console.WriteLine($"The message has been produced to {departamentType} departament!");
             }
         }
 
@@ -71,7 +69,7 @@ namespace RabbitMQ.Sample.Producer.Consumer.Header
                 {
                     var body = ea.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
-                    Console.WriteLine($" Received: {message}");
+                    Console.WriteLine($"Received: {message}");
                 };
 
                 channel.BasicConsume(queue: queue,

@@ -7,10 +7,12 @@ namespace RabbitMQ.Sample.Producer.Consumer
 {
     internal class Program
     {
+        private const string VHOST = "vh.samples";
         private const string HOST_NAME = "localhost";
-        private const string QUEUE = "q.hello";
         private const string EXCHANGE = "x.hello";
         private const string ROUTING_KEY = "rk.hello";
+
+        private const string QUEUE = "q.hello";
 
         static void Main(string[] args)
         {
@@ -20,12 +22,17 @@ namespace RabbitMQ.Sample.Producer.Consumer
 
         static void Producer()
         {
-            var factory = new ConnectionFactory() { HostName = HOST_NAME };
+            var factory = new ConnectionFactory() 
+            { 
+                HostName = HOST_NAME,
+                VirtualHost = VHOST
+            };
+
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
                 channel.QueueDeclare(queue: QUEUE,
-                                     durable: false,
+                                     durable: true,
                                      exclusive: false,
                                      autoDelete: false,
                                      arguments: null);
@@ -38,21 +45,23 @@ namespace RabbitMQ.Sample.Producer.Consumer
                                      basicProperties: null,
                                      body: body);
 
-                Console.WriteLine($" Sent {message}");
+                Console.WriteLine($" Sent: {message}");
             }
-
-            Console.WriteLine(" Press [enter] to exit.");
-            Console.ReadLine();
         }
 
         static void Consumer()
         {
-            var factory = new ConnectionFactory() { HostName = HOST_NAME };
+            var factory = new ConnectionFactory() 
+            { 
+                HostName = HOST_NAME,
+                VirtualHost= VHOST
+            };
+
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
                 channel.QueueDeclare(queue: QUEUE,
-                                     durable: false,
+                                     durable: true,
                                      exclusive: false,
                                      autoDelete: false,
                                      arguments: null);
@@ -62,15 +71,12 @@ namespace RabbitMQ.Sample.Producer.Consumer
                 {
                     var body = ea.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
-                    Console.WriteLine($" Received: {message}");
+                    Console.WriteLine($"Received: {message}");
                 };
 
                 channel.BasicConsume(queue: QUEUE,
                                      autoAck: true,
                                      consumer: consumer);
-
-                Console.WriteLine(" Press [enter] to exit.");
-                Console.ReadLine();
             }
         }
     }
