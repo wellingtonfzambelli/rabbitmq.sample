@@ -5,25 +5,25 @@
   "queues": [
     {
       "name": "q.sales.two",
-      "durable": true,
+      "durable": false,
       "auto_delete": false,
       "arguments": { "x-queue-type": "classic" }
     },
     {
       "name": "q.financial.one",
-      "durable": true,
+      "durable": false,
       "auto_delete": false,
       "arguments": { "x-queue-type": "classic" }
     },
     {
       "name": "q.financial.two",
-      "durable": true,
+      "durable": false,
       "auto_delete": false,
       "arguments": { "x-queue-type": "classic" }
     },
     {
       "name": "q.sales.one",
-      "durable": true,
+      "durable": false,
       "auto_delete": false,
       "arguments": { "x-queue-type": "classic" }
     }

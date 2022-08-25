@@ -67,9 +67,21 @@ namespace RabbitMQ.Sample.Producer.Consumer.Header
                 var consumer = new EventingBasicConsumer(channel);
                 consumer.Received += (model, ea) =>
                 {
-                    var body = ea.Body.ToArray();
-                    var message = Encoding.UTF8.GetString(body);
-                    Console.WriteLine($"Received: {message}");
+                    try
+                    {
+                        var body = ea.Body.ToArray();
+                        var message = Encoding.UTF8.GetString(body);
+
+                        Console.WriteLine($"Received: {message}");
+
+                        // Remove the message from queue
+                        channel.BasicAck(ea.DeliveryTag, false);
+                    }
+                    catch (Exception ex)
+                    {
+                        // Return the message to queue
+                        channel.BasicNack(ea.DeliveryTag, false, true);
+                    }
                 };
 
                 channel.BasicConsume(queue: queue,

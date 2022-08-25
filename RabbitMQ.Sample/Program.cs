@@ -16,11 +16,11 @@ namespace RabbitMQ.Sample.Producer.Consumer
 
         static void Main(string[] args)
         {
-            Producer();
+            Producer("Hello, teste message 1");
             Consumer();
         }
 
-        static void Producer()
+        static void Producer(string message)
         {
             var factory = new ConnectionFactory() 
             { 
@@ -32,12 +32,11 @@ namespace RabbitMQ.Sample.Producer.Consumer
             using (var channel = connection.CreateModel())
             {
                 channel.QueueDeclare(queue: QUEUE,
-                                     durable: true,
+                                     durable: false,
                                      exclusive: false,
                                      autoDelete: false,
                                      arguments: null);
-
-                string message = "Hello World!";
+                
                 var body = Encoding.UTF8.GetBytes(message);
 
                 channel.BasicPublish(exchange: EXCHANGE,
@@ -61,7 +60,7 @@ namespace RabbitMQ.Sample.Producer.Consumer
             using (var channel = connection.CreateModel())
             {
                 channel.QueueDeclare(queue: QUEUE,
-                                     durable: true,
+                                     durable: false,
                                      exclusive: false,
                                      autoDelete: false,
                                      arguments: null);
@@ -69,13 +68,25 @@ namespace RabbitMQ.Sample.Producer.Consumer
                 var consumer = new EventingBasicConsumer(channel);
                 consumer.Received += (model, ea) =>
                 {
-                    var body = ea.Body.ToArray();
-                    var message = Encoding.UTF8.GetString(body);
-                    Console.WriteLine($"Received: {message}");
+                    try
+                    {
+                        var body = ea.Body.ToArray();
+                        var message = Encoding.UTF8.GetString(body);
+
+                        Console.WriteLine($"Received: {message}");
+                        
+                        // Remove the message from queue
+                        channel.BasicAck(ea.DeliveryTag, false);
+                    }
+                    catch (Exception ex)
+                    {
+                        // Return the message to queue
+                        channel.BasicNack(ea.DeliveryTag, false, true); 
+                    }
                 };
 
                 channel.BasicConsume(queue: QUEUE,
-                                     autoAck: true,
+                                     autoAck: false, // RabbitMQ waiting a confirmation manualy
                                      consumer: consumer);
             }
         }
